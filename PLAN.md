@@ -72,3 +72,9 @@ check again.
 - **Top concerns:** `sql/dim_gtin_assignments.sql` has invalid inline composite FK syntax — will fail on Postgres apply (the ALTER TABLE below is correct; the column-level REFERENCES clause is the bug). No CI pipeline. `brief_product_master_data_model.md` is a planning artifact orphaned at root. `tests/CLAUDE.md` describes test conventions that don't match this project type.
 - **Action taken:** Audit only — no fixes this session. User wrapped before executing.
 - **Next review:** 2026-07-13
+
+### 2026-09-23 — Audit (health check only)
+- **Findings:** 0 critical, 5 important, 5 nice-to-have
+- **Top concerns:** Branches have diverged: HEAD is `client-mode-2026-08` (3 engagement-guard commits not on main), while origin/main has an og:image commit this branch lacks, so the deploy workflow on main runs without the engagement guard. HANDOFF.md and this history stop at 2026-06-13 despite the July remediation, August canonical sweep and September og commit. No tests or CI build/DDL check exist, and the $93K headline ("Annual chargeback exposure") is not a value in the vendored canonical_values.json, so the drift gate cannot verify it. (Security, code-quality and data reviews were done by hand because the automated skills weren't available.)
+- **Action taken:** Audit only — no fixes this session
+- **Next review:** 2026-12-22
