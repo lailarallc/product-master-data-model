@@ -6,7 +6,6 @@ const SKU = {
   upc:         '614140000907',     // GTIN-12, each level
   gtin14:      '10614140000904',   // GTIN-14, case level
   casePackQty: 24,
-  msrp:        '$12.50',
   unitWeight:  '1.25 lbs',
 };
 
@@ -21,7 +20,7 @@ const retailers = [
     fields: [
       { key: 'GTIN / UPC',       value: SKU.upc,         level: 'each',    status: 'present' },
       { key: 'Unit of Measure',  value: 'EA',             level: 'each',    status: 'present' },
-      { key: 'MSRP',             value: SKU.msrp,         level: 'product', status: 'present' },
+      { key: 'MSRP',             value: '—',              level: 'product', status: 'present' },
       { key: 'Unit Weight',      value: SKU.unitWeight,   level: 'each',    status: 'present' },
       { key: 'Unit Length',      value: null,             level: 'each',    status: 'missing' },
       { key: 'Unit Width',       value: null,             level: 'each',    status: 'missing' },
