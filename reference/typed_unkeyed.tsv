@@ -1,0 +1,26 @@
+# Typed figures this repo prints with no canon key (owner, 2026-11-15; plan U19, U22).
+# One row per figure per location. The platform's fleet check holds the row count to a ceiling that only
+# falls: give a figure a key (or stop printing it) and delete its row. listed=yes: the read map names it, and
+# U19 owes its key; listed=no: U22 works it down. Generated from the 2026-11-15 manifest pass.
+file_line	printed	exact_value	meaning	source	kind	listed
+README.md:23	50 SKUs	50	SKU count, all-time	canon universe.skus_total	restatement	no
+README.md:23	5 product lines	5	product line count, all-time	canon universe.product_lines	restatement	no
+README.md:23	6 contracted retailers	6	contracted retailer count, all-time	canon universe.retailers	restatement	no
+README.md:27	10 channels	10	channel count (6 retail + 3 distributors + DTC)	canon universe.retailers + universe.distributors + DTC	restatement	no
+site/src/components/EntityTable.astro:27	$93K/yr	93000	product-data chargeback cost attributable to data-quality defects, annual	restates product-data-health-audit $93K; platform CINDERHAVEN_CANONICAL.md:399	restatement	yes
+site/src/components/GTINHierarchy.astro:49	6 units	6	CHP-0009 inner pack quantity	hardcoded markup	prose-only	no
+site/src/components/GTINHierarchy.astro:6	614140000907	614140000907	CHP-0009 UPC-12 (GTIN check digit identifier)	hardcoded constant; not found in platform	prose-only	no
+site/src/components/GTINHierarchy.astro:7	10614140000904	10614140000904	CHP-0009 case GTIN-14	hardcoded constant; not found in platform	prose-only	no
+site/src/components/GTINHierarchy.astro:8	24	24	CHP-0009 case pack quantity (units per case)	hardcoded constant; not found in platform	prose-only	no
+site/src/components/GTINHierarchy.astro:9	$12.50	12.50	CHP-0009 Calabrian Chili Marinara MSRP	"hardcoded constant (""CHP-0009 seed data""); SKU id and name not found in the platform repo"	prose-only	no
+site/src/components/GTINHierarchy.astro:95	48 cases	48	CHP-0009 cases per pallet	hardcoded markup	prose-only	no
+site/src/components/MarginMath.astro:23	$15M–$25M		brand size band	prose only	prose-only	no
+site/src/components/MarginMath.astro:4	$93K/yr	93000	product-data chargeback cost attributable to data-quality defects, annual (281 of 2,873 retailer chargebacks)	restates product-data-health-audit $93K; platform CINDERHAVEN_CANONICAL.md:399	restatement	yes
+site/src/components/MarginMath.astro:5	50	50	SKU count (SKU_COUNT constant, rendered at :14)	constant MarginMath.astro:5; canon universe.skus_total	restatement	no
+site/src/components/MarginMath.astro:6	6	6	retailer count (RETAILER_COUNT constant, rendered at :14)	constant MarginMath.astro:6; canon universe.retailers	restatement	no
+site/src/components/ThreeRetailerComparison.astro:10	1.25 lbs	1.25	CHP-0009 unit weight	hardcoded constant	prose-only	no
+site/src/components/ThreeRetailerComparison.astro:8	24	24	CHP-0009 case pack quantity (duplicate constant)	hardcoded constant	prose-only	no
+site/src/components/ThreeRetailerComparison.astro:9	$12.50	12.50	CHP-0009 MSRP (duplicate constant)	hardcoded constant	prose-only	no
+site/src/pages/index.astro:97	50 SKUs	50	SKU count, all-time	canon universe.skus_total	restatement	no
+site/src/pages/index.astro:97	6 retailers	6	contracted retailer count	canon universe.retailers	restatement	no
+site/src/pages/index.astro:97	3 distributors	3	distributor count	canon universe.distributors	restatement	no
